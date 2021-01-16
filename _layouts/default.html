@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta name="author" content="Regina Chen">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="Regina,Chen,Y,UT,Austin,Karat,University,Texas,Seattle,Software,Engineer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/mystyles.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" href="{{ site.url }}/{{ site.css_path}}">
+  </head>
+
+  <body>
+
+    {{ content }}
+
+  </body>
+
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+a {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #388bff;
+  transition: all 0.2s ease;
+}
+
+::selection {
+  background-color: #8fceff;
+}
+
+.bg-container {
+  height: 100%;
+  width: 100%;
+  border: 1rem solid white;
+  margin: 0 !important;
+  padding: 2rem;
+  background-color: #63a4ff;
+  background-image: -webkit-linear-gradient(bottom right, #63a4ff 0%, #83eaf1 74%);
+  background-image: -o-linear-gradient(bottom right, #63a4ff 0%, #83eaf1 74%);
+  background-image: linear-gradient(to top left, #63a4ff 0%, #83eaf1 74%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fg-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.x-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.x-name {
+  margin-top: auto;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.x-description {
+  font-size: 1.2rem;
+}
+
+.x-description-past {
+  font-size: 1rem;
+}
+
+.x-small {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.x-contact {
+  font-size: 0;
+  margin-top: auto;
+}
+
+.x-divider {
+  font-size: 1rem;
+  border: 0.5px solid white;
+}
+
+.x-link {
+  color: white;
+  text-align: center;
+  padding: 2px 19px 2px 20px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.x-link:hover {
+  color: #388bff;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .bg-container {
+    border: none;
+  }
+
+  .x-title {
+    font-size: 2.5rem;
+  }
+
+  .x-name {
+    font-size: 2.5rem;
+  }
+
+  .x-description {
+    font-size: 1rem;
+  }
+
+  .x-description-past {
+    font-size: 0.9rem;
+  }
+
+  .x-small {
+    font-size: 0.8rem;
+  }
+
+  .x-link {
+    font-size: 0.8rem;
+    padding: 2px 0;
+    display: block;
+  }
+
+  .x-divider {
+    display: none;
+  }
+}
